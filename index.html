@@ -15,107 +15,143 @@
   
     <div class="employees">
 
-        <div class="employee-card">
+        <div class="employee-card" id="michael" data-person="michael">
             <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png" alt="Michael">
-            <audio data-key="65" src="sounds/clap.wav"></audio>
+            <audio src="sounds/clap.wav" id="audio"></audio>
             <h3>Michael</h3>
+            <button>PLAY</button>
         </div>
-
-   
+        
         <div class="employee-card">
             <img src="https://i.pinimg.com/originals/1a/15/43/1a154308f860e52f9b706b8c218442ca.jpg" alt="Jim">
             <h3>Jim</h3>
+            <button>PLAY</button>
         </div>
-
-    
+        
+        
         <div class="employee-card">
             <img src="https://cdn.costumewall.com/wp-content/uploads/2018/09/pam-beesly.jpg" alt="Pam">
             <h3>Pam</h3>
+            <button>PLAY</button>
         </div>
-
-    
+        
+        
         <div class="employee-card">
             <img src="https://static2.srcdn.com/wordpress/wp-content/uploads/2020/01/dwight-schrute-office-featured.jpg" alt="Dwight">
             <h3>Dwight</h3>
+            <button>PLAY</button>
         </div>
-
-    
+        
+        
         <div class="employee-card">
             <img src="https://www.peacocktv.com/stream-tv/the-office/assets/cast/angela-martin.jpg" alt="Angela">
             <h3>Angela</h3>
+            <button>PLAY</button>
         </div>
-
+        
         <div class="employee-card">
             <img src="https://static.wikia.nocookie.net/theoffice/images/e/e0/Character_-_RyanHoward.PNG/revision/latest/top-crop/width/360/height/360?cb=20200414174545" alt="Ryan">
             <h3>Ryan</h3>
+            <button>PLAY</button>
         </div>
-
+        
         <div class="employee-card">
             <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/08/Mindy-Kaling-Kelly-The-Office.jpg" alt="Kelly">
             <h3>Kelly</h3>
+            <button>PLAY</button>
         </div>
-
-    
+        
+        
         <div class="employee-card">
             <img src="https://static.wikia.nocookie.net/theoffice/images/2/25/Oscar_Martinez.jpg/revision/latest?cb=20170701085818" alt="Oscar">
             <h3>Oscar</h3>
+            <button>PLAY</button>
         </div>
-
+        
         <div class="employee-card">
             <img src="https://static.wikia.nocookie.net/theoffice/images/b/b2/2009Kevincropped.PNG/revision/latest?cb=20170701083657" alt="Kevin">
             <h3>Kevin</h3>
+            <button>PLAY</button>
         </div>
-
+        
         <div class="employee-card">
             <img src="https://www.indiewire.com/wp-content/uploads/2020/07/Screen-Shot-2020-07-06-at-10.39.06-AM.png" alt="Stanley">
             <h3>Stanley</h3>
+            <button>PLAY</button>
         </div>
-
+        
         <div class="employee-card">
             <img src="https://static.wikia.nocookie.net/theoffice/images/e/e6/Phyllis_Vance.jpg/revision/latest/top-crop/width/360/height/360?cb=20170701090016" alt="Phyllis">
             <h3>Phyllis</h3>
+            <button>PLAY</button>
         </div>
-
+        
         <div class="employee-card">
             <img src="https://www.peacocktv.com/stream-tv/the-office/assets/cast/meredith-palmer.jpg" alt="Meredith">
             <h3>Meredith</h3>
+            <button>PLAY</button>
         </div>
-
+        
         <div class="employee-card">
             <img src="https://devsari.com/wp-content/uploads/2020/07/intro-1586377261.jpg" alt="Andy">
             <h3>Andy</h3>
+            <button>PLAY</button>
         </div>
-
+        
         <div class="employee-card">
             <img src="https://i2.wp.com/devsari.com/wp-content/uploads/2021/01/HP-Monitor-Used-by-Craig-Robinson-Darryl-Philbin-in-The-Office-%E2%80%93-Season-9-Episode-9-1-scaled.jpg?fit=1500%2C844&ssl=1" alt="Darryl">
             <h3>Darryl</h3>
+            <button>PLAY</button>
         </div>
-
+        
         <div class="employee-card">
             <img src="https://uproxx.com/wp-content/uploads/2019/07/creed.jpg?quality=100&w=650" alt="Creed">
             <h3>Creed</h3>
+            <button>PLAY</button>
         </div>
-
+        
         <div class="employee-card">
             <img src="https://static.wikia.nocookie.net/theoffice/images/0/0a/ErinHannon.jpg/revision/latest?cb=20170805002853" alt="Erin">
             <h3>Erin</h3>
+            <button>PLAY</button>
         </div>
-
+        
         <div class="employee-card">
             <img src="https://static.wikia.nocookie.net/theoffice/images/4/4a/TobyFlenderson.jpg/revision/latest/top-crop/width/360/height/360?cb=20201015184907" alt="Toby">
             <h3>Toby</h3>
+            <button>PLAY</button>
         </div>
     </div>
-
-
-    <script>
+    
+    
+    <!-- <script>
         //return to figuring out how to click a card and have a certain sound play
         //michael scott currently has a random sound in his div
         function playSound(e){
-            const audio = document.querySelector()
+            const audio = document.querySelector('audio')
+            audio.play()
         }
-
+        
         window.addEventListener('click', playSound)
+    </script> -->
+    <!-- <script>
+        //document.querySelectorAll select all employee-cards
+        const employees = document.querySelectorAll('.employee-card')
+        console.log(employees)
+        function playSound(e){
+            const audio = document.querySelector(`audio[data-person="${e.}"]`)
+        }
+        //loop through everything that i have from employee cards
+        employees.forEach(employee => employee.addEventListener('click', playSound))
+        //add event listener to every employee card
+        //figure out which employee card was clicked
+        //if employee cards matches a sound, fire off the specific sound
+    </script> -->
+    <script>
+    const employeeCard = document.querySelector('#michael')
+    employeeCard.addEventListener('click', function(e) {
+        console.log(e)
+    })
     </script>
 </body>
 </html>

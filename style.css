@@ -1,3 +1,17 @@
+button {
+  background-color: #2d7691; /* Green */
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Roboto Mono';
+}
+
+
 .employees {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
